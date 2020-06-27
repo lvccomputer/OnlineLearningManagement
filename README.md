@@ -1,3 +1,7 @@
 - Do not copyright!
 
-thuan nguyen
+Mobile-Dang Vu Duong
+
+Tablet - Le Cuong
+
+Desktop - Thuan Nguyen
