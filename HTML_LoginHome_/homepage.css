@@ -1,0 +1,66 @@
+body{
+    background-color: #dbd8d8;
+    font-weight: bold;
+}
+
+nav{
+    height: 80px;
+}
+
+nav a{
+    color: #031456;
+}
+
+nav a img{
+    width: 15%;
+    height: 15%;
+    padding-left: 50px;
+}
+
+form{
+    margin-top:10px;
+}
+
+form a img{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.hello{
+    float: right;
+    padding-left: 20px;
+}
+
+.container{
+    margin-top:60px;
+}
+
+.row p{
+   color: #031456;
+}
+
+.nav-item a img{
+    width: 19px;
+    height: 19px;
+}
+
+.class1{
+    background-color: #007bff;
+    margin-top: 40px;
+    padding-top: 10px;
+    margin-left: 50px;
+    border-radius: 5px;
+}
+
+.class1 h4{
+    color: #E82607;
+    margin-left: 50px;
+}
+
+.footer{
+    margin-top: 60px;
+    margin-bottom:20px;
+    color: #031456;
+}
