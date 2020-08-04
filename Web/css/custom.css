@@ -1,0 +1,85 @@
+body {
+  background-color: #ecf0f1;
+}
+/* header */
+.logo-title {
+  line-height: 60px;
+  font-size: 22px;
+}
+.logo-img {
+  height: 60px;
+  width: 60px;
+}
+.navbar {
+  margin-bottom: 80px;
+  -webkit-box-shadow: -6px 16px 74px -31px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: -6px 16px 74px -31px rgba(0, 0, 0, 0.66);
+  box-shadow: -6px 16px 74px -31px rgba(0, 0, 0, 0.66);
+}
+
+/* footer */
+.copyright {
+  font-size: 16px;
+  line-height: 50px;
+  height: 50px;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* content */
+#wrapper{
+  margin-bottom: 100px;
+}
+
+.list-group {
+  background-color: #ffffff;
+  border: 1px solid #95a5a6;
+}
+
+.list-title {
+  color: #000000;
+}
+
+.list-title:hover {
+  color: orangered;
+  text-decoration: none;
+}
+
+.list-group-item {
+  border: 1px solid #ffffff;
+}
+.main-list-group {
+  padding: 15px;
+  width: 100%;
+  padding-bottom: 20px;
+  border: 1px solid #95a5a6;
+  background-color: #ffffff;
+}
+.title-list {
+  margin-bottom: 40px;
+  width: 100%;
+  height: 50px;
+  background-color: #00ffff52;
+}
+.title-list p {
+  margin-left: 20px;
+  line-height: 50px;
+  color: #ff7800;
+  font-weight: bold;
+  font-size: 22px;
+}
+.col-form-label,
+.form-control {
+  margin-top: 20px;
+}
+.add-account {
+  margin-top: 30px;
+  text-align: center;
+}
