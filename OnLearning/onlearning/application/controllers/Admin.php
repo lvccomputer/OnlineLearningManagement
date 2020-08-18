@@ -11,16 +11,15 @@ class Admin extends CI_Controller
             return;
         }
         if(!$this->session->userData("is_admin")){
-            redirect("home/index");
+            redirect("course/index");
         }
     }
 
     public function index(){
         $data = array(
-                    "content"=>"admin/home",
-                    "username"=>$this->session->userData("username")
+                "content" => "admin/home",
+                "username" => $this->session->userData("username")
         );
-        //echo $this->session->userData("username");
         $this->load->view("layout_ad", $data);
     }
 }

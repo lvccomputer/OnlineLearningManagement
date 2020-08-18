@@ -17,6 +17,6 @@
         <li class="page-item">
             <a class="page-link" href="<?php echo base_url("index.php/course/index/".$p)?>"><?php echo $p ?></a>
         </li>
-        <?php endfor ?>
+        <?php endfor?>
     </ul>
 </div>

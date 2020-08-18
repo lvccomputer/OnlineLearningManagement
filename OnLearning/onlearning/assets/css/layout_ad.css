@@ -11,28 +11,6 @@ nav a{
     color: #031456;
 }
 
-.container{
-    margin-top: 20px;
-    height: 500px;
-}
-
-.row p{
-   color: #031456;
-}
-
-.nav-item a img{
-    width: 19px;
-    height: 19px;
-}
-
-.class1{
-    background-color: #007bff;
-    margin-top: 40px;
-    padding-top: 10px;
-    margin-left: 50px;
-    border-radius: 5px;
-}
-
 .form-search{
     margin-top:10px;
     width: 700px;
@@ -75,9 +53,59 @@ nav a{
     padding-top: 10px;
 }
 
+.container{
+    margin-top: 20px;
+    height: 500px;
+}
+
+.class1{
+    background-color: #fafbfd;
+    height: 400px;
+    margin-top: 40px;
+    padding-top: 10px;
+    margin-left: 50px;
+    border-radius: 5px;
+}
+
 .class1 h4{
     color: #aa1f09;
     margin-left: 30px;
+}
+
+.nav-item a img{
+    width: 19px;
+    height: 19px;
+}
+
+.btn1{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.image1{
+    width: 19px;
+    height: 19px;
+}
+
+.page{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 600px;
+    right: 450px;
+}
+
+.delete{
+    margin: auto;
+    width: 450px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+
+.delete div{
+    padding-left: 50px;
+    padding-top: 50px;
 }
 
 .footer{

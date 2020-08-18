@@ -2,7 +2,7 @@
 <div class="list-courses">
     <?php foreach($courses_array as $course): ?>
         <h4>
-            <a href="<?php echo base_url("index.php/course/list/".$course["id"]) ?>">
+            <a href="<?php echo base_url("index.php/course/detail/".$course["id"]) ?>">
                 <?php echo $course['course_name'] ?>
             </a>
         </h4>
@@ -11,7 +11,7 @@
 
 <div class="page">
     <ul class="pagination justify-content-center">
-        <?php for($p = 1; $p <= ceil($total/6); $p++): ?>
+        <?php for($p = 1; $p <= ceil($total/5); $p++): ?>
         <li class="page-item">
             <a class="page-link" href="<?php echo base_url("index.php/course/list/".$p)?>"><?php echo $p ?></a>
         </li>
