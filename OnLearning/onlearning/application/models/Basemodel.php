@@ -19,8 +19,6 @@ class Basemodel extends CI_Model
 
     public function add($news)
     {
-        //$qr = $this->db->query("insert into tintuc (tieude, noidung) values ('".$news["tieude"]."','".$news["noidung"]."')");
-        //echo $qr;
         if ($this->db->insert($this->table, $news)) {
             return true;
         }

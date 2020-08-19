@@ -20,24 +20,24 @@
         <hr class="d-sm-none">
     </div>
     <div class="col-sm-6 class1">
-        <h4>CÁC KHÓA HỌC</h4>
-        <ul class="nav nav-pills flex-column" style="margin-left: 50px;">
-            <li class="nav-item">
-                <a class="nav-link" href="#"><img src="<?php echo base_url("images/calculator.png"); ?>">&nbsp;&nbsp; Toán 10: Kiến thức đại số cơ bản</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><img src="<?php echo base_url("images/calculator.png"); ?>">&nbsp;&nbsp; Toán 10: Kiến thức hình học cơ bản</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><img src="<?php echo base_url("images/physics.png"); ?>">&nbsp;&nbsp; Vật lý 10: Ôn tập chương</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><img src="<?php echo base_url("images/physics.png"); ?>">&nbsp;&nbsp; Hóa học 10: Ôn tập cuối năm</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url("index.php/course/all/") ?>"><img src="<?php echo base_url("images/onlearning.png"); ?>">&nbsp;&nbsp; Tất cả khóa học...</a>
-            </li>
+        <h3 class="list">Tất cả Khóa học</h3>
+        <div class="list-courses">
+            <?php foreach ($courses_array as $course) : ?>
+                <h4>
+                    <a href="<?php echo base_url("index.php/course/detail/".$course["id"]) ?>">
+                        <?php echo $course['course_name'] ?>
+                    </a>
+                </h4>
+            <?php endforeach ?>
+        </div>
+    </div>
+    <div class="page">
+        <ul class="pagination justify-content-center">
+            <?php for ($p = 1; $p <= ceil($total/5); $p++) : ?>
+                <li class="page-item">
+                    <a class="page-link" href="<?php echo base_url("index.php/course/all/".$p) ?>"><?php echo $p ?></a>
+                </li>
+            <?php endfor ?>
         </ul>
-        <br>
     </div>
 </div>

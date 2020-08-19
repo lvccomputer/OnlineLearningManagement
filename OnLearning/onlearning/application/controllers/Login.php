@@ -27,7 +27,7 @@ class Login extends CI_Controller
             if($user["is_admin"]){
                 redirect("admin/index");
             }
-            redirect("course/list");
+            redirect("course/index");
         }
         redirect("login/index");
     }

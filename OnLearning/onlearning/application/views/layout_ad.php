@@ -18,7 +18,7 @@
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <form class="form-search" action="" method="">
+        <form class="form-search" action="<?php echo base_url("index.php/course/searchCourse");?>" method="get">
             <input type="text" name="query" id="" placeholder="Khóa học">
             <input type="submit" value="Tìm kiếm">
             <a href="#"><img src="<?php echo base_url("images/agenda.png");?>"></a>
@@ -35,7 +35,7 @@
             <?php $this->load->view($content); ?>
         </div>
     </div>
-
+    
     <div class="jumbotron text-center footer">
     <p>Copyright@ 2020 by On-learning Group</p>
     </div>
