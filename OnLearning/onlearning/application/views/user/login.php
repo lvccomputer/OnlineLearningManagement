@@ -11,9 +11,6 @@
 <body>
   <nav class="navbar navbar-expand-sm bg-light navbar-light">
     <h6>Quản lý học trực tuyến</h6>
-    <div class="menu">
-      <a href="#">Bạn chưa có tài khoản</a>
-    </div>
   </nav>
   <div class="title">
     <div>
@@ -39,7 +36,6 @@
               <td><input type="password" id="" class="input1" name="password"></p></td>
             </tr>
           </table>
-          <a href="#">Đăng ký tài khoản mới</a><br>
           <button type="submit" class="btn btn-success">Đăng nhập</button>
         </form>
         <hr class="d-sm-none">

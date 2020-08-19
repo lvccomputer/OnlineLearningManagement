@@ -89,14 +89,6 @@ class Quiz extends Admin
         redirect("quiz/index", "refresh");
     }
 
-    // public function upload()
-    // {
-    //     $data = array(
-    //         "content" => "admin/upload_form"
-    //     );
-    //     $this->load->view("layout_ad", $data);
-    // }
-
     public function do_upload()
     {
         $config['upload_path']          = './uploads/';

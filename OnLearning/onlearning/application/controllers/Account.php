@@ -33,7 +33,7 @@ class Account extends Admin
     {
         //lay ra tất cả ds nguoi dung
         $data = array(
-            "new_user" => $this->Usermodel->getAll(5, 5*($p-1)),
+            "new_user" => $this->Usermodel->getAll(4, 4*($p-1)),
             "content" => "user/list_user",
             "total" => $this->Usermodel->countAll()
         );

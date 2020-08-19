@@ -20,17 +20,17 @@
         <hr class="d-sm-none">
     </div>
     <div class="col-sm-6 class1">
-        <?php if(isset($quiz)): ?>
+        <?php if (isset($quiz)) : ?>
             <h3>Chỉnh sửa khóa học</h3>
-        <?php else: ?>
+        <?php else : ?>
             <h3>Thêm mới khóa học</h3>
         <?php endif; ?>
-        <form method="post" action="<?php echo base_url("index.php/course/".(isset($course)?"update/".$course["id"]:"add"))?>">
+        <form method="post" action="<?php echo base_url("index.php/course/" . (isset($course) ? "update/" . $course["id"] : "add")) ?>">
             <table>
                 <tr>
                     <td>Tên khóa học</td>
                     <td>
-                        <input type="text" name="course_name" value="<?php echo (isset($course)?$course["course_name"]:"") ?>">
+                        <input type="text" name="course_name" value="<?php echo (isset($course) ? $course["course_name"] : "") ?>">
                     </td>
                 </tr>
                 <tr>
@@ -39,7 +39,7 @@
                 <tr>
                     <td>Số bài học</td>
                     <td>
-                        <input type="text" name="qty_lesson" value="<?php echo (isset($course)?$course["qty_lesson"]:"") ?>">
+                        <input type="text" name="qty_lesson" value="<?php echo (isset($course) ? $course["qty_lesson"] : "") ?>">
                     </td>
                 </tr>
                 <tr>
@@ -48,12 +48,13 @@
                 <tr>
                     <td>Mô tả</td>
                     <td>
-                        <textarea type="text" name="course_describe" cols="40" rows="7"><?php echo (isset($course)?$course["course_describe"]:"") ?></textarea>
+                        <textarea type="text" name="course_describe" cols="40" rows="6"><?php echo (isset($course) ? $course["course_describe"] : "") ?></textarea>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2" align="right">
-                    <input type="submit" class="btn btn-primary" value="Lưu"></td>
+                        <input type="submit" class="btn btn-primary" value="Lưu">
+                    </td>
                 </tr>
             </table>
         </form>

@@ -46,7 +46,7 @@ class Course extends CI_Controller {
 	{
         $this->load->model("Coursemodel");
         $course = $this->Coursemodel->getById($id);
-
+        
         $data = array(
             "content" => "course/detail",
             "course" => $course

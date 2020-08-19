@@ -1,7 +1,7 @@
 <div style="height: 350px;">
     <?php foreach ($teacher_list as $teacher) : ?>
         <div class="card" style="width: 35%; height: 380px; float: left; margin-left: 50px; margin-top: 50px;">
-            <img src="<?php echo $teacher['images'] ?>" class="card-img-top" alt="..." style="width: 100%; height: 180px;">
+            <img src="<?php echo base_url("images/teachers/teacher2.jpg") ?>" class="card-img-top" alt="..." style="width: 100%; height: 180px;">
             <div class="card-body">
                 <h5 class="card-title"><?php echo $teacher['teacher_name'] ?></h5>
                 <h6 class="card-title"><?php echo $teacher['subject'] ?></h6>

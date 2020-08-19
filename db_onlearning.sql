@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 18, 2020 at 08:14 PM
+-- Generation Time: Aug 19, 2020 at 02:19 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -32,61 +32,38 @@ CREATE TABLE `courses` (
   `id` int(11) NOT NULL,
   `course_name` varchar(300) NOT NULL,
   `course_describe` varchar(300) NOT NULL,
-  `qty_lesson` int(11) NOT NULL
+  `qty_lesson` int(11) NOT NULL,
+  `less_name` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `courses`
 --
 
-INSERT INTO `courses` (`id`, `course_name`, `course_describe`, `qty_lesson`) VALUES
-(1, 'Đại số 10: Mệnh đề tập hợp', 'Mệnh đề tập hợp gồm 5 bài học chính và 1 bài ôn tập cuối chương.', 6),
-(2, 'Đại số 10: Hàm số bậc nhất và bậc hai', 'Hàm số bậc nhất và bậc hai gồm 3 bài học và 1 bài ôn tập cuối chương', 4),
-(3, 'Đại số 10: Phương trình và hệ phương trình', 'Phương trình và hệ phương trình gồm 3 bài học chính và 1 bài ôn tập cươi chương', 4),
-(4, 'Đại số 10: Bất đẳng thức và bát phương trình', 'Bất đẳng thức và bất phương trình gồm 5 bài học chính và 1 bài ôn tập cuối chương', 6),
-(5, 'Đại số 10: Thống kê', 'Thống kê gồm 4 bài học chính và 1 bài ôn tập cuối chương', 5),
-(6, 'Đại số 10: Cung và góc lượng giác, công thức lượng giác', 'Cung và góc lượng giác, công thức lượng giác gồm 3 bài học chính và 1 bài ôn tập cuối chương', 4),
-(7, 'Hình học 10: Vec-tơ', 'Vec-tơ gòm 4 bài học chính và 1 bài ôn tập cuối chương.', 5),
-(8, 'Hình học 10: Tích vô hướng của hai vect-tơ và ứng dụng', 'Tích vô hướng của hai vect-tơ và ứng dụng gồm 3 bài học chính và 1 bài ôn tập cuối chương.', 4),
-(9, 'Hình học 10: Phương pháp tọa dộ trong mặt phẳng', 'Phương pháp tọa dộ trong mặt phẳng gồm 3 bài học chính và 1 bài ôn tập cuối chương.', 4),
-(10, 'Vật lý 10: Động học chất điểm', 'Động học chất điểm gồm 8 bài học chính.', 8),
-(11, 'Vật lý 10: Động lực học chất điểm', 'Động lực học chất điểm gồm 8 bài học chính.', 8),
-(12, 'Vật lý 10: Cân bằng và chuyển động của vật rắn', 'Cân bằng và chuyển động của vật rắn gồm 6 bài học chính.', 6),
-(13, 'Vật lý 10: Các định luật bảo toàn', 'Các định luật bảo toàn gồm 5 bài học chính.', 5),
-(14, 'Vật lý 10: Chất khí', 'Chất khí gồm 4 bài học chính.', 4),
-(15, 'Vật lý 10: Cơ sở của nhiệt động lực học', 'Cơ sở của nhiệt động lực học gồm 2 ài học chính.', 2),
-(16, 'Vật lý 10: Chất rắn và chất lỏng. Sự chuyển thể', 'Chất rắn và chất lỏng. Sự chuyển thể gồm 7 bài học chính.', 7),
-(17, 'Hóa học 10: Nguyên tử', 'Nguyên tử gồm 6 bài học chính.', 6),
-(18, 'Hóa học 10: Bảng tuần hoàn các nguyên tố hóa học và định luật tuần hoàn', 'Bảng tuần hoàn các nguyên tố hóa học và định luật tuần hoàn gồm 5 baafi học chính.', 5),
-(19, 'Hóa học 10: Liên kết hóa học', 'Liên kết hóa học gồm 5 bài học chính.', 5),
-(20, 'Hóa học 10: Phản ứng lõi hóa khử', 'Phản ứng õi hóa khử gồm 4 bài học chính.', 4),
-(21, 'Hóa học 10: Nhóm Halogen', 'Nhóm Halogen gồm 8 bài học chính.', 8),
-(22, 'Hóa học 10: Oxi - Lưu huỳnh', 'Oxi - Lưu huỳnh gồm 7 bài học chính.', 7),
-(23, 'Hóa học 10: Tốc độ phản ứng và cân bằng hóa học', 'Tốc độ phản ứng và cân bằng hóa học gồm 4 bài học chính.', 4);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `lessons`
---
-
-CREATE TABLE `lessons` (
-  `id` int(11) NOT NULL,
-  `les_name` varchar(300) NOT NULL,
-  `les_path` varchar(300) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `lessons`
---
-
-INSERT INTO `lessons` (`id`, `les_name`, `les_path`) VALUES
-(1, 'Bài 1: Mệnh đề', 'files/bai1.pdf'),
-(2, 'Bài 2: Tập hợp', 'files/bai2.pdf'),
-(3, 'Bài 3: Các phép toán tập hợp', 'files/bai3.pdf'),
-(4, 'Bài 4: Các tập hợp số', 'files/bai4.pdf'),
-(5, 'Bài 5: Số gần đúng Sai số', 'files/bai5.pdf'),
-(6, 'Bài 6: Ôn tập chương 1 Mệnh đề tập hợp', 'files/bai6.pdf');
+INSERT INTO `courses` (`id`, `course_name`, `course_describe`, `qty_lesson`, `less_name`) VALUES
+(1, 'Đại số 10: Mệnh đề tập hợp', 'Mệnh đề tập hợp gồm 5 bài học chính và 1 bài ôn tập cuối chương.', 6, 'Bài 1: Mệnh đề\r\nBài 2: Tập hợp\r\nBài 3: Các phép toán tập hợp\r\nBài 4: Các tập hợp số\r\nBài 5: Số gần đúng Sai số\r\nBài 6: Ôn tập chương 1 Mệnh đề tập hợp'),
+(2, 'Đại số 10: Hàm số bậc nhất và bậc hai', 'Hàm số bậc nhất và bậc hai gồm 3 bài học và 1 bài ôn tập cuối chương', 4, NULL),
+(3, 'Đại số 10: Phương trình và hệ phương trình', 'Phương trình và hệ phương trình gồm 3 bài học chính và 1 bài ôn tập cươi chương', 4, NULL),
+(4, 'Đại số 10: Bất đẳng thức và bát phương trình', 'Bất đẳng thức và bất phương trình gồm 5 bài học chính và 1 bài ôn tập cuối chương', 6, NULL),
+(5, 'Đại số 10: Thống kê', 'Thống kê gồm 4 bài học chính và 1 bài ôn tập cuối chương', 5, NULL),
+(6, 'Đại số 10: Cung và góc lượng giác, công thức lượng giác', 'Cung và góc lượng giác, công thức lượng giác gồm 3 bài học chính và 1 bài ôn tập cuối chương', 4, NULL),
+(7, 'Hình học 10: Vec-tơ', 'Vec-tơ gòm 4 bài học chính và 1 bài ôn tập cuối chương.', 5, NULL),
+(8, 'Hình học 10: Tích vô hướng của hai vect-tơ và ứng dụng', 'Tích vô hướng của hai vect-tơ và ứng dụng gồm 3 bài học chính và 1 bài ôn tập cuối chương.', 4, NULL),
+(9, 'Hình học 10: Phương pháp tọa dộ trong mặt phẳng', 'Phương pháp tọa dộ trong mặt phẳng gồm 3 bài học chính và 1 bài ôn tập cuối chương.', 4, NULL),
+(10, 'Vật lý 10: Động học chất điểm', 'Động học chất điểm gồm 8 bài học chính.', 8, NULL),
+(11, 'Vật lý 10: Động lực học chất điểm', 'Động lực học chất điểm gồm 8 bài học chính.', 8, NULL),
+(12, 'Vật lý 10: Cân bằng và chuyển động của vật rắn', 'Cân bằng và chuyển động của vật rắn gồm 6 bài học chính.', 6, NULL),
+(13, 'Vật lý 10: Các định luật bảo toàn', 'Các định luật bảo toàn gồm 5 bài học chính.', 5, NULL),
+(14, 'Vật lý 10: Chất khí', 'Chất khí gồm 4 bài học chính.', 4, NULL),
+(15, 'Vật lý 10: Cơ sở của nhiệt động lực học', 'Cơ sở của nhiệt động lực học gồm 2 ài học chính.', 2, NULL),
+(16, 'Vật lý 10: Chất rắn và chất lỏng. Sự chuyển thể', 'Chất rắn và chất lỏng. Sự chuyển thể gồm 7 bài học chính.', 7, NULL),
+(17, 'Hóa học 10: Nguyên tử', 'Nguyên tử gồm 6 bài học chính.', 6, NULL),
+(18, 'Hóa học 10: Bảng tuần hoàn các nguyên tố hóa học và định luật tuần hoàn', 'Bảng tuần hoàn các nguyên tố hóa học và định luật tuần hoàn gồm 5 baafi học chính.', 5, NULL),
+(19, 'Hóa học 10: Liên kết hóa học', 'Liên kết hóa học gồm 5 bài học chính.', 5, NULL),
+(20, 'Hóa học 10: Phản ứng lõi hóa khử', 'Phản ứng õi hóa khử gồm 4 bài học chính.', 4, NULL),
+(21, 'Hóa học 10: Nhóm Halogen', 'Nhóm Halogen gồm 8 bài học chính.', 8, NULL),
+(22, 'Hóa học 10: Oxi - Lưu huỳnh', 'Oxi - Lưu huỳnh gồm 7 bài học chính.', 7, NULL),
+(23, 'Hóa học 10: Tốc độ phản ứng và cân bằng hóa học', 'Tốc độ phản ứng và cân bằng hóa học gồm 4 bài học chính.', 4, NULL);
 
 -- --------------------------------------------------------
 
@@ -209,12 +186,6 @@ ALTER TABLE `courses`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `lessons`
---
-ALTER TABLE `lessons`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `quiz`
 --
 ALTER TABLE `quiz`
@@ -241,12 +212,6 @@ ALTER TABLE `user`
 --
 ALTER TABLE `courses`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
-
---
--- AUTO_INCREMENT for table `lessons`
---
-ALTER TABLE `lessons`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `quiz`

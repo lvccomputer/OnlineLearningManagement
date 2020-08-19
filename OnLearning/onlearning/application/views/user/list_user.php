@@ -27,8 +27,8 @@
         <table border="1" class="table">
             <?php foreach ($new_user as $user) : ?>
                 <tr>
-                    <td><a href="<?php echo base_url("index.php/account/edit/" . $user["id"]) ?>">
-                            <?php echo $user["username"] ?>
+                    <td><a href="<?php echo base_url("index.php/account/edit/" . $user["id"]) ?>"><img style="width: 10%; height: 8%;" src="<?php echo base_url("images/person.png"); ?>">
+                            <?php echo $user["username"] ?></td>
                     <td><a href="<?php echo base_url("index.php/account/edit/" . $user["id"]) ?>">Sửa</a></td>
                     <td><a href="<?php echo base_url("index.php/account/delete/" . $user["id"]) ?>">Xóa</a></td>
                 </tr>
@@ -38,7 +38,7 @@
     </div>
     <div class="page">
         <ul class="pagination justify-content-center">
-            <?php for ($p = 1; $p <= ceil($total/5); $p++) : ?>
+            <?php for ($p = 1; $p <= ceil($total/4); $p++) : ?>
                 <li class="page-item">
                     <a class="page-link" href="<?php echo base_url("index.php/account/index/" . $p) ?>"><?php echo $p ?></a>
                 </li>
